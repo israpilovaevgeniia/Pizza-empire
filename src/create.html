@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Империя пиццы</title>
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <header>
         <nav>
             <h1>Добавить пиццу</h1>
-            <a href="./index.html">Назад в меню</a>
+            <a class="btn" href="./index.html">Назад в меню</a>
         </nav>
     </header>
-    <main>
+    <main class="wrapper">
         <form class="create__form">
             <label for="title">
                 Название:
@@ -51,6 +52,7 @@
                 Цена:
                 <input id="price" type="number" name="price" required>
             </label>
+            <button>Добавить пиццу</button>
         </form>
     </main>
 </body>

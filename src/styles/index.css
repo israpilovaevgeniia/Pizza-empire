@@ -1,0 +1,98 @@
+:root {
+    --background: #f5f5f5;
+    --title: #e74c3c;
+    --button: #f1c40f;
+    --hoverButton: #f39c12;
+    --toppings: #27ae60;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    margin: 20px;
+}
+
+header, 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+h1 {
+    color: var(--title);
+    font-size: 40px;
+}
+
+.root {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+input[type="text"],
+input[type="number"],
+fieldset {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gray;
+}
+
+input:valid {
+    border-color: var(--toppings);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.btn, 
+button {
+    background-color: var(--button);
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hoverButton);
+}
+
+.btn:hover {
+    background-color: var(--hoverButton);
+}
+
+span {
+    color: var(--toppings);
+}
+
+label,
+legend {
+    color: var(--title);
+}
+
