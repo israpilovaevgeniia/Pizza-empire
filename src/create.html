@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Империя пиццы</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Добавить пиццу</h1>
+            <a href="./index.html">Назад в меню</a>
+        </nav>
+    </header>
+    <main>
+        <form class="create__form">
+            <label for="title">
+                Название:
+                <input id="title" type="text" name="title" required>
+            </label>
+            <label for="desc">
+                Описание:
+                <input id="desc" type="text" name="decs" required>
+            </label>
+            <fieldset>
+                <legend>
+                    Выбрать ингридиенты:
+                </legend>
+                <label>
+                    <input type="checkbox" name="toppings" value="Грибы">
+                    <span>Грибы</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="toppings" value="Перец">
+                    <span>Перец</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="toppings" value="Кукуруза">
+                    <span>Кукуруза</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="toppings" value="Оливки">
+                    <span>Оливки</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="toppings" value="Ананас">
+                    <span>Ананас</span>
+                </label>
+            </fieldset>
+            <label for="price">
+                Цена:
+                <input id="price" type="number" name="price" required>
+            </label>
+        </form>
+    </main>
+</body>
+</html>
